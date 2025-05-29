@@ -1,0 +1,277 @@
+body {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: lightgray;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 100px;
+  background-color: #001f7c38;
+}
+
+/* BAckground GAlaxy Video CSS */
+.back-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  mix-blend-mode: overlay;
+}
+
+/* Media Querries for BG Video */
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    height: auto;
+    width: 100%;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* Header */
+header {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.123);
+  backdrop-filter: blur(10px);
+  padding: 0 30px;
+  box-shadow: 0 0 15px #72a1de68;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left img {
+  width: 40px;
+  margin: 0 15px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 69, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px #72a1de68;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  margin: 0 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 40px;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #727fde;
+  text-decoration: none;
+  color: lightgray;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #727fde;
+  color: black;
+  box-shadow: 0 0 15px #72a1de6f;
+}
+
+/* Black Hole Video */
+
+.blackhole-box {
+  position: absolute;
+  display: flex;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+  mix-blend-mode: lighten;
+}
+
+.blackhole-box video {
+  width: 100%;
+  margin: -23.5%;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 5%;
+}
+
+.hero-info .hero-info-title {
+  color: #727fde;
+  padding: 8px 5px;
+  border: 1px solid #727fde77;
+  width: 250px;
+  background-color: #2200493d;
+  box-shadow: 0 0 5px #727fde88;
+  border-radius: 50px;
+}
+
+.hero-info h1 {
+  font-size: 50px;
+  max-width: 600px;
+  font-weight: 700;
+  line-height: 70px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.hero-info p {
+  max-width: 550px;
+  line-height: 25px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.hero-info button {
+  color: white;
+  padding: 15px 35px;
+  border-radius: 10px;
+  border: 1px solid #727fdeb4;
+  background-color: #2200493d;
+  box-shadow: 0 0 5px #727fde86;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-info button:hover {
+  box-shadow: 0 0 15px #72a1de86;
+}
+
+/* Gradient Animation  */
+.gradient {
+  background: linear-gradient(
+    to right,
+    #008baa,
+    #7e42a7,
+    #6600c5,
+    #6070fd,
+    #2a46ff,
+    #0099ff,
+    #008ead
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient {
+  to {
+    background-position: 200%;
+  }
+}
+
+/* Hero Video */
+
+.hero-vid-box{
+    position: absolute;
+    right: 0%;
+}
+
+.hero-vid-box video{
+    height: 900px;
+    mix-blend-mode: lighten;
+}
+
+/* Scroll Down */
+.scroll-down {
+  position: absolute;
+  bottom: 8%;
+  left: 49%;
+  transform: translateX(-50%);
+  height: 50px;
+  width: 30px;
+  border: 2px solid lightgray;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(211, 211, 211, 0.477);
+}
+
+.scroll-down::before,.scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    border: 2px solid lightgray;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 2s ease-in-out infinite;
+}
+
+.scroll-down::before{
+    top: 30%;
+    animation-delay: 0.5s;
+}
+
+@keyframes scroll-down {
+    0%{
+        opacity: 0;
+    }
+    30%,60%{
+        opacity: 1;
+    }
+    100%{
+        top: 90%;
+        opacity: 0;
+    }
+}
