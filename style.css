@@ -48,6 +48,7 @@ html {
 
 /* Header */
 header {
+  z-index: 999;
   display: flex;
   position: absolute;
   top: 0;
