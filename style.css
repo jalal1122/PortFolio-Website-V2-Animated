@@ -122,6 +122,7 @@ header ul li a {
 /* Black Hole Video */
 
 .blackhole-box {
+  z-index: -1;
   position: absolute;
   display: flex;
   top: 0;
