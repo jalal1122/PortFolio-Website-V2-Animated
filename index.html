@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Back Galaxy Video Container -->
     <div class="container">
       <video
         class="back-video"
@@ -40,12 +39,32 @@
           <li><a href="#">Contact</a></li>
         </ul>
 
-        <div class="social-icons">
+        <div class="box-icons">
           <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
           <a href="#"><i class="fa-brands fa-github"></i></a>
         </div>
       </header>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="close-icon">
+          <i class="fa-solid fa-x"></i>
+        </div>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+
+        <div class="social-sidebar">
+          <a><i class="fa-brands fa-youtube"></i></a>
+          <a><i class="fa-brands fa-github"></i></a>
+          <a><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
 
       <!-- Black Hole Video box -->
       <div class="blackhole-box">
@@ -62,8 +81,8 @@
       <!-- Hero Section -->
       <section class="hero">
         <!-- Hero Info  -->
-        <div class="hero-info">
-          <div class="hero-info-title">
+        <div class="hero-info autoBlur">
+          <div class="hero-info-title autoDisplay">
             <i class="fa-brands fa-sketch"></i>
             Mern Stack Developer Portfolio
           </div>
@@ -74,11 +93,8 @@
           </h1>
 
           <p>
-            Welcome to MJDev Studio, where I specialize in creating stunning web
-            applications using the MERN stack. I am dedicated to delivering
-            high-quality projects that meet your needs and exceed your
-            expectations. Whether you're looking for a simple website or a
-            complex web application, I've got you covered.
+            Welcome to MJDev Studio — crafting sleek, high-performance web apps
+            with the MERN stack. Let's build something powerful, together.
           </p>
 
           <button>
@@ -94,6 +110,7 @@
             autoplay
             muted
             playsinline
+            class="autoBlur"
             src="./assets/videos/hero-video.mp4"
             type="video/mp4"
           ></video>
@@ -105,39 +122,30 @@
 
       <!-- Info Section -->
       <section class="info-section">
-        <div class="section-title">Hello, There👋</div>
+        <div class="section-title autoDisplay">Hello, There👋</div>
         <div class="info-cards">
           <div class="card">
-            <h1>Hi there, I'm Muhammad Jalal</h1>
-            <p>
-              I have built over 50 projects, exploring both frontend and backend
-              technologies. While I am actively learning backend development, my
-              passion motivates me to continually improve and create dynamic,
-              responsive websites.
-            </p>
-
             <img src="./assets/images/mygrid1.png" alt="card-image" />
+            <h1>Hello, I'm Muhammad Jalal</h1>
+            <p>
+              I'm Muhammad Jalal, a passionate MERN stack developer with 50+
+              projects built across frontend and backend. I specialize in
+              crafting dynamic, responsive web apps and love pushing boundaries
+              through continuous learning.
+            </p>
           </div>
 
           <div class="card">
+            <img src="./assets/images/techstack.png" alt="card-image" />
             <h1>Tech Stack</h1>
             <p>
-              I have built over 50 projects, exploring both frontend and backend
-              technologies. While I am actively learning backend development, my
-              passion motivates me to continually improve and create dynamic,
-              responsive websites.
+              With 50+ projects built, I thrive at the intersection of frontend
+              finesse and backend logic. Always learning, always building
+              dynamic digital experiences.
             </p>
-
-            <img src="./assets/images/techstack.png" alt="card-image" />
           </div>
 
           <div class="card">
-            <h1>I'm very flexible with time zone communications & locations</h1>
-            <p>
-              I am based in Pakistan and open to working with clients from all
-              over the world
-            </p>
-
             <video
               loop
               muted
@@ -146,6 +154,7 @@
               src="./assets/videos/glob.mp4"
               type="video/mp4"
             ></video>
+            <h1>I'm very flexible with time zone communications & locations</h1>
 
             <button>
               <i class="fa-solid fa-share-from-square"></i> Contact Me
@@ -153,6 +162,7 @@
           </div>
 
           <div class="card">
+            <img src="./assets/images/grid4.png" alt="card-image" />
             <h1>My Passion for Coding</h1>
             <p>
               I love solving problems and creating innovative solutions through
@@ -160,25 +170,23 @@
               passion for technology and a desire to create impactful
               applications.
             </p>
-
-            <img src="./assets/images/grid4.png" alt="card-image" />
           </div>
         </div>
       </section>
 
       <!-- Project Section -->
       <section class="my-projects">
-        <div class="section-title">My Projects 👨‍💻</div>
+        <div class="section-title autoDisplay">My Projects 👨‍💻</div>
         <!-- Skill Sprint Project -->
         <div class="project-card">
-          <div class="project-vidbox">
+          <div class="project-vidbox autoBlur">
             <video
               id="projectVideo1"
               src="./assets/videos/skillSprint-project-video.mp4"
             ></video>
             <div class="hover-sign"></div>
           </div>
-          <div class="project-info">
+          <div class="project-info fadein-left">
             <h1>SkillSprint <span class="gradient">Skill</span> Manager</h1>
             <p>
               SkillSprint is a platform designed to help users learn new skills
@@ -193,13 +201,13 @@
         </div>
         <!-- Career Path Finder Ai Project -->
         <div class="project-card">
-          <div class="project-vidbox">
+          <div class="project-vidbox autoBlur">
             <video
               id="projectVideo2"
               src="./assets/videos/CarrerPathFinder-project-video.mp4"
             ></video>
           </div>
-          <div class="project-info">
+          <div class="project-info fadein-left">
             <h1>Career <span class="gradient">Path</span> Finder</h1>
             <p>
               Career Path Finder is an AI-driven platform that helps users
@@ -214,13 +222,13 @@
         </div>
         <!-- Skill Sprint Project -->
         <div class="project-card">
-          <div class="project-vidbox">
+          <div class="project-vidbox autoBlur">
             <video
               id="projectVideo3"
               src="./assets/videos/shop.co-project-video.mp4"
             ></video>
           </div>
-          <div class="project-info">
+          <div class="project-info fadein-left">
             <h1>Shop.Co <span class="gradient">E-Commerce</span> Website</h1>
             <p>
               Shop.Co is a modern e-commerce platform that offers a seamless
@@ -237,7 +245,7 @@
 
       <!-- Skills Section -->
       <section class="skills-section">
-        <h1 class="section-title">My Skills 💪</h1>
+        <h1 class="section-title autoDisplay">My Skills 💪</h1>
         <div class="skills-box">
           <img
             class="skills-image"
@@ -246,7 +254,7 @@
           />
 
           <!-- FrontEnd -->
-          <div class="frontend">
+          <div class="frontend autoDisplay">
             <h1 class="gradient">
               Frontend <i class="fa-solid fa-laptop-code"></i>
             </h1>
@@ -259,7 +267,7 @@
           </div>
 
           <!-- Backend -->
-          <div class="backend">
+          <div class="backend autoDisplay">
             <h1 class="gradient">Backend <i class="fa-solid fa-server"></i></h1>
             <p>
               I am currently learning backend development, focusing on Node.js
@@ -315,6 +323,58 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section">
+        <h1 class="section-title autoDisplay">Let's talk😊</h1>
+
+        <div class="social-box autoBlur">
+          <a href="#"><i class="fa-solid fa-phone"></i> +39 111 222 444</a>
+          <a href="#"
+            ><i class="fa-brands fa-telegram"></i> Contact Example.com</a
+          >
+          <a href="#"
+            ><i class="fa-brands fa-linkedin"></i> Contact Example.com</a
+          >
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-box autoBlur">
+          <p>
+            Wheter you're looking to build a new website, improve your existing
+            platform, or bring a unique project to file. i'm here to help.
+          </p>
+
+          <p>Full Name</p>
+          <input placeholder="Your Full name" type="full name" />
+
+          <p>Email Address</p>
+          <input placeholder="Your Email" type="Contact" />
+
+          <p>Your Message</p>
+          <input
+            class="input-message"
+            type="contact"
+            placeholder="shaire your thoughts..."
+          />
+
+          <button>Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section class="footer">
+        <h1>©️2025, Made by Muhammad Jalal</h1>
+        <div class="box-icons">
+          <p><i class="fa-brands fa-youtube"></i></p>
+          <p><i class="fa-brands fa-github"></i></p>
+          <p><i class="fa-brands fa-linkedin"></i></p>
         </div>
       </section>
     </div>
